@@ -5,5 +5,5 @@ export const searchPokemon = async (pokemon) => {
     return await response.json();
   } catch (error) {
     console.log("error: ", error);
-  }
+  };
 };
