@@ -28,16 +28,17 @@ const Searchbar = () => {
           type="text"
           onChange={onChangeHandler}
         />
-      </div>
       <div className="searchbar-btn">
         <button onClick={onButtonClickHandler}>Buscar</button>
       </div>
+      </div>
       {(pokemon) ? (
         <div>
+          <img className="poke-gif" src={pokemon.sprites.versions["generation-v"]["black-white"].animated.front_default} alt={pokemon.name} />
           <div>Nome: {pokemon.name}</div>
           <div>Peso: {pokemon.weight}</div>
-          <img src={pokemon.sprites.versions["generation-v"]["black-white"].animated.front_default} alt={pokemon.name} />
-          
+          <div>Tipo: {pokemon.types[0].type.name}</div>
+          <div>Indice: {pokemon.game_indices[0].game_index}</div>
         </div>)
         : null}
     </div>

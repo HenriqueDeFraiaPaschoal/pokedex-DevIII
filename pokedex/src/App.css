@@ -8,6 +8,9 @@ nav {
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
+  background-image: linear-gradient(180deg, red, yellow);
+  box-shadow: 0px 10px 8px #888888;
+  margin-bottom: 30px;
 }
 
 .navbar-img {
@@ -16,6 +19,7 @@ nav {
 
 .searchbar-container {
   display: flex;
+  flex-direction: column;
   margin: 0px auto;
   padding: 0 20px;
   align-items: center;
@@ -24,13 +28,15 @@ nav {
 .searchbar {
   background-color: white;
   margin-right: 20px;
+  display: flex;
 }
 
 .searchbar input {
   padding: 10px;
   box-shadow: 0px 2px 2px (0, 0, 0, 0.25);
-  border-radius: 3px;
-  border: none;
+  border-radius: 10px;
+  border: gray 1px solid;
+  margin-right: 10px;
 }
 
 .searchbar-btn button {
@@ -44,6 +50,13 @@ nav {
 
 .searchbar-btn button:active {
   background-color: #2e6f9f;
+}
+
+.poke-gif {
+  width: 150px;
+  margin: 20px 0px;
+  margin-bottom: 20px;
+  border-radius: 20px;
 }
 
 .App {
