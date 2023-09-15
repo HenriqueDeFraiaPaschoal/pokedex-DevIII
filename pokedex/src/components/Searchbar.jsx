@@ -37,8 +37,9 @@ const Searchbar = () => {
           <img className="poke-gif" src={pokemon.sprites.versions["generation-v"]["black-white"].animated.front_default} alt={pokemon.name} />
           <div>Nome: {pokemon.name}</div>
           <div>Peso: {pokemon.weight}</div>
+          <div>Altura: {pokemon.height}</div>
           <div>Tipo: {pokemon.types[0].type.name}</div>
-          <div>Indice: {pokemon.game_indices[0].game_index}</div>
+          <div>Indice: {pokemon.id}</div>
         </div>)
         : null}
     </div>
